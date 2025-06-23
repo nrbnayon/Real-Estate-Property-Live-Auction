@@ -94,8 +94,6 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 # WebSocket Configuration (Optional)
 NEXT_PUBLIC_WS_URL=ws://localhost:8080/auction
 
-# Backend API
-NEXT_PUBLIC_API_URL=https://azdealhub-api.onrender.com
 
 # Twilio (Optional)
 TWILIO_ACCOUNT_SID=your_twilio_sid
