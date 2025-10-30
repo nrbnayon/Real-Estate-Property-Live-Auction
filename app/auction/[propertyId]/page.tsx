@@ -62,7 +62,7 @@ export default function AuctionPage({ params }: AuctionPageProps) {
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Live Property Auction</h1>
         <p className="text-gray-600 dark:text-gray-400">
-          {mockProperty.address}, {mockProperty.city}, {mockProperty.state}
+          {mockProperty?.address}, {mockProperty?.city}, {mockProperty?.state}
         </p>
       </div>
 
@@ -73,11 +73,11 @@ export default function AuctionPage({ params }: AuctionPageProps) {
         </TabsList>
 
         <TabsContent value="auction">
-          <EnhancedLiveAuction propertyId={params.propertyId} property={mockProperty} />
+          <EnhancedLiveAuction propertyId={params?.propertyId} property={mockProperty} />
         </TabsContent>
 
         <TabsContent value="details">
-          <PropertyDetails slug={`property-${params.propertyId}`} />
+          <PropertyDetails slug={`property-${params?.propertyId}`} />
         </TabsContent>
       </Tabs>
     </div>
